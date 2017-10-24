@@ -1,10 +1,10 @@
 {
-  "name": "",
-  "title": "",
-  "displayName": "",
+  "name": "mailsprung",
+  "title": "mailsprung",
+  "displayName": "mailsprung",
   "theme": "ui",
   "version": "0.1.0",
-  "description": "",
+  "description": "some theme, yeh?",
   "license": "GPL-3.0",
   "engines": {
     "nylas": "*",
