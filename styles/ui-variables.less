@@ -93,6 +93,7 @@ rgba(253,253,253,0.75) 100%);
 }
 
 // cribbed from darkside
+// cribbed from darkside
 .toolbar-window-controls {
   display: flex;
   align-items: center;
@@ -131,6 +132,55 @@ rgba(253,253,253,0.75) 100%);
 .toolbar-window-controls .maximize {
   background-color: @maximize;
 }
+/* // Weird experimental pill-shaped traffic lights
+.toolbar-window-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  min-width: 60px;
+  width: 60px; //50
+  height: 15px;
+}
+
+.toolbar-window-controls button {
+  height: 15px;
+  width: 18px;
+  background-color: @sidebar-text;
+  background-image: none !important;
+  float: none;
+  opacity: 0.5;
+  margin: 0;
+  transform: scaleY(0.5);
+  border-radius: 2px;
+  transition-duration: 150ms;
+  transition-property: border-radius, opacity, transform;
+}
+
+.toolbar-window-controls:hover button {
+  opacity: 1;
+  border-radius: 2px;
+  transform: scaleY(1);
+}
+.toolbar-window-controls:hover .close {
+  border-radius: 50% 2px 2px 50%;
+}
+.toolbar-window-controls:hover .maximize {
+  border-radius: 2px 50% 50% 2px;
+}
+
+.toolbar-window-controls .close {
+  background-color: @danger;
+  
+}
+
+.toolbar-window-controls .minimize {
+  background-color: @minimize;
+}
+
+.toolbar-window-controls .maximize {
+  background-color: @maximize;
+}
 
 .is-blurred {
   .toolbar-window-controls .close,
@@ -139,7 +189,7 @@ rgba(253,253,253,0.75) 100%);
     //background-color: fade(@gray, 50%);
     background-color: fade(@sidebar-text, 50%);
   }
-}
+}*/
 
 // Compose Button Overrides
 /*.sheet-toolbar .btn.btn-toolbar.item-compose {
