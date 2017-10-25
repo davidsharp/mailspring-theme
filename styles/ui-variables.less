@@ -93,8 +93,20 @@ rgba(253,253,253,0.75) 100%);
 }
 
 .well .well-row input {
-  background-color: @gray
+  background-color: @gray;
 }
+
+.menu.search-container input {
+  background-color: rgba(0,0,0,0)
+}
+.menu.search-container input:focus {
+  background-color: @gray-darker;
+  color: @text-color;
+}
+//.menu.search-container input:focus {
+//  background-color: @gray-lighter;
+//  color: @text-color-inverse;
+//}
 
 // cribbed from darkside
 .toolbar-window-controls {
