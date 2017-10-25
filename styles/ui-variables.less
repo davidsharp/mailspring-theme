@@ -87,6 +87,11 @@ rgba(253,253,253,0.75) 100%);
 @maximize: @color-success;
 @danger: @color-danger;
 
+// prefer Balsamiq Sans if it exists, I guess
+* {
+  font-family: "Balsamiq Sans", Nylas-Pro, Helvetica, sans-serif !important;
+}
+
 // hide the toolbar activity
 .toolbar-activity {
   //display: none;
@@ -97,16 +102,36 @@ rgba(253,253,253,0.75) 100%);
 }
 
 .menu.search-container input {
-  background-color: rgba(0,0,0,0)
+  background-color: rgba(0,0,0,0);
 }
+
 .menu.search-container input:focus {
   background-color: @gray-darker;
   color: @text-color;
 }
+// alt style, light box with darker text
 //.menu.search-container input:focus {
 //  background-color: @gray-lighter;
 //  color: @text-color-inverse;
 //}
+
+// This doesn't work
+//.menu.search-container input.empty::placeholder::before {
+//  content: "Search for the mail you love 💌";
+//}
+.menu.search-container input.empty::placeholder {
+  //opacity: 0;
+}
+
+.scrollbar-track {
+  background-color: rgba(0,0,0,0.2);
+ }
+.scrollbar-track-inner {
+ background-color: rgba(0,0,0,0);
+}
+.scrollbar-handle {
+  box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.2);
+}
 
 // cribbed from darkside
 .toolbar-window-controls {
