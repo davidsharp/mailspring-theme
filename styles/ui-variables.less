@@ -91,9 +91,8 @@ rgba(253,253,253,0.75) 100%);
 @danger: @color-danger;
 
 // prefer Balsamiq Sans if it exists, I guess
-* {
-  font-family: "Balsamiq Sans", Nylas-Pro, Helvetica, sans-serif !important;
-}
+@font-family-sans-serif: 'Balsamiq Sans', 'Nylas-Pro', 'Helvetica', sans-serif;
+@font-family: @font-family-sans-serif;
 
 // hide the toolbar activity
 .toolbar-activity {
