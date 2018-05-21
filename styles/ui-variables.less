@@ -156,13 +156,18 @@ rgba(253,253,253,0.75) 100%);
 
 .ignore-in-parent-frame {
   body {
-    -webkit-filter: invert() hue-rotate(180deg);
-    * {color: @gray-darker;}
-    //* {color: @gray-lighter;}
+    //-webkit-filter: invert() hue-rotate(180deg);// saturate(130%);
+    * {color: @gray-darker;}//* {color: @gray-lighter;}
   }
   img {
-    -webkit-filter: invert() hue-rotate(180deg);
+    //-webkit-filter: invert() hue-rotate(180deg);// saturate(130%);
   }
+}
+.iframe-container {
+  background-color: darken(@gray-lighter, 20%);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px darken(@gray, 20%);
 }
 
 // cribbed from darkside
