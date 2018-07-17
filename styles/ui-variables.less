@@ -106,7 +106,7 @@ rgba(253,253,253,0.75) 100%);
 .menu.search-container input, .sheet-toolbar .thread-search-bar {
   background-color: rgba(0,0,0,0);
   transition-duration: 300ms;
-  transition-property: background-color;
+  transition-property: background-color, border-radius;
   transition-timing-function: ease-in;
   border-radius: 20px;
 }
@@ -115,9 +115,13 @@ rgba(253,253,253,0.75) 100%);
   background-color: @gray-darker;
   color: @text-color;
 }
+.sheet-toolbar .thread-search-bar.focused {
+  border-radius: 10px 10px 0 0;
+}
 
 .sheet-toolbar .suggestions {
   background-color: @gray-darker;
+  border-radius: 0 0 10px 10px;
 }
 // alt style, light box with darker text
 //.menu.search-container input:focus {
