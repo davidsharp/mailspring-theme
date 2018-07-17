@@ -103,7 +103,7 @@ rgba(253,253,253,0.75) 100%);
   background-color: @gray;
 }
 
-.menu.search-container input {
+.menu.search-container input, .sheet-toolbar .thread-search-bar {
   background-color: rgba(0,0,0,0);
   transition-duration: 300ms;
   transition-property: background-color;
@@ -111,9 +111,13 @@ rgba(253,253,253,0.75) 100%);
   border-radius: 20px;
 }
 
-.menu.search-container input:focus {
+.menu.search-container input:focus, .sheet-toolbar .thread-search-bar.focused {
   background-color: @gray-darker;
   color: @text-color;
+}
+
+.sheet-toolbar .suggestions {
+  background-color: @gray-darker;
 }
 // alt style, light box with darker text
 //.menu.search-container input:focus {
