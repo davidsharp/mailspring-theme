@@ -93,6 +93,9 @@ rgba(253,253,253,0.75) 100%);
 // prefer Balsamiq Sans if it exists, I guess
 @font-family-sans-serif: 'Balsamiq Sans', 'Nylas-Pro', 'Helvetica', sans-serif;
 @font-family: @font-family-sans-serif;
+body style ~ mailspring-workspace, body style ~ mailspring-workspace * {
+  font-family: 'Nylas-Pro' !important;
+}
 
 // hide the toolbar activity
 .toolbar-activity {
@@ -122,6 +125,22 @@ rgba(253,253,253,0.75) 100%);
 .sheet-toolbar .suggestions {
   background-color: @gray-darker;
   border-radius: 0 0 10px 10px;
+
+  opacity: 0;
+  transition-duration: 300ms;
+  transition-property: opacity;
+  transition-timing-function: ease-in;
+  /*
+  height:0px;
+  transition-duration: 2ms;
+  transition-property: height;
+  transition-timing-function: ease-in;
+  overflow:hidden;*/
+}
+
+.focused .suggestions {    
+  /*height:100px;*/
+  opacity: 1;
 }
 // alt style, light box with darker text
 //.menu.search-container input:focus {
@@ -142,6 +161,13 @@ rgba(253,253,253,0.75) 100%);
   //opacity: 0;
 }
 
+// looks slow, not slick
+//.account-sidebar .item .name, .account-sidebar .item .icon {
+//  transition-duration: 500ms;
+//  transition-property: color;
+//  transition-timing-function: ease-out;
+//}
+
 .scrollbar-track {
   background-color: rgba(0,0,0,0.2);
  }
@@ -150,6 +176,11 @@ rgba(253,253,253,0.75) 100%);
 }
 .scrollbar-handle {
   box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.2);
+}
+
+img.spinner.gif {
+  background-color: white;
+  border-radius: 50%;
 }
 
 ::selection {
@@ -162,6 +193,20 @@ rgba(253,253,253,0.75) 100%);
   display: none;
 }
 
+//.message-item-wrap, .message-item-white-wrap {
+//  background-color: #e0e0e0;
+//}
+//.message-item-wrap *,.message-item-white-wrap * {
+//  color: @gray-darker;
+//}
+//.inbox-html-wrapper {
+//  margin: 4px;
+//  border: 1px;
+//  border-color: @gray-darker;
+//  background-color: #e0e0e0;
+//  color: @gray-darker;
+//  border-radius: 2px;
+//}
 .ignore-in-parent-frame {
   body {
     //-webkit-filter: invert() hue-rotate(180deg);// saturate(130%);
